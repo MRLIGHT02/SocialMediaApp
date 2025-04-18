@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMediaApp.Pages.LoginPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+
+             Title="Login"
+             Padding="20">
+    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="20">
+    <Image Grid.Row="0" 
+           Source="socialmedia.png" 
+           HeightRequest="128"
+            
+         />
+        <Label Grid.Row="1"
+               Text="Login"
+               HorizontalOptions="Center"
+               FontSize="25"
+               FontAttributes="Bold"/>
+        <VerticalStackLayout Grid.Row="2">
+            <Label
+                 Text="Username"
+                />
+            <Entry
+               
+               Visual="Default"
+                  TextColor="Black"
+                Placeholder="Enter Your Username" BackgroundColor="Transparent"/>
+            <Label HeightRequest="25"/>
+            <Label
+       Text="Password"
+      />
+            <Entry
+                IsPassword="True" BackgroundColor="LightGoldenrodYellow"
+      Placeholder="Enter Your Password"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

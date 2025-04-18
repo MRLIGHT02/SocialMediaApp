@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMediaApp.Pages.OnboardingPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}">
+    <Grid  RowDefinitions="*,Auto,*,Auto">
+        <Grid Grid.Row="1" RowDefinitions="Auto,Auto,Auto" RowSpacing="10">
+            <Image Source="logo3.png" HeightRequest="128"/>
+            <Label Grid.Row ="1" Text="Hello There !" HorizontalOptions="Center"
+                   TextColor="White" FontAttributes="Bold"
+                   FontSize="25"/>
+            <VerticalStackLayout
+                Grid.Row="2"  Spacing="10" >
+                <Label Text="Welcome to This" TextColor="White" FontSize="25" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Text="Soical Media App" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+
+            </VerticalStackLayout>
+
+        </Grid>
+        <StackLayout Grid.Row="3" Padding="10" >
+            <Button  Text="Get Started" BackgroundColor="White" 
+                     TextColor="{StaticResource Primary}"
+                     Style="{StaticResource rounded}"
+                     FontAttributes="Bold"
+                     Clicked="Button_Clicked"
+                     
+                     
+    />
+           
+        </StackLayout>
+    </Grid>
+</ContentPage>
