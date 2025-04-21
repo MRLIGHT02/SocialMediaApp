@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace SocialMediaApp.Controls
 {
-    public class NullBorderClass:Entry
+    public class NullBorderEntery:Entry
     {
 
         protected override void OnHandlerChanged()

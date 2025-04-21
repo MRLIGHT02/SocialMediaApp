@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SocialMediaApp.Pages.LoginPage"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-
+             xmlns:controls="clr-namespace:SocialMediaApp.Controls"
              Title="Login"
              Padding="20">
     <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="20">
@@ -17,23 +17,21 @@
                HorizontalOptions="Center"
                FontSize="25"
                FontAttributes="Bold"/>
-        <VerticalStackLayout Grid.Row="2">
+        <VerticalStackLayout Grid.Row="2" Spacing="2  ">
             <Label
                  Text="Username"
                 />
-            <Entry
-               
-               Visual="Default"
-                  TextColor="Black"
-                Placeholder="Enter Your Username" BackgroundColor="Transparent"/>
-            <Label HeightRequest="25"/>
+            <Label/>
+            <controls:NullBorderEntery BackgroundColor="LightGoldenrodYellow" Placeholder="Enter UserName"/>
+            <controls:Spacer />
             <Label
        Text="Password"
                 
       />
-            <Entry
-                IsPassword="True" BackgroundColor="LightGoldenrodYellow"
-      Placeholder="Enter Your Password"/>
+            <controls:NullBorderEntery
+                IsPassword="True"
+                BackgroundColor="LightGoldenrodYellow"
+                Placeholder="Enter Your Password"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
