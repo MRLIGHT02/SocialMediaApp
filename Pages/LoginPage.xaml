@@ -29,6 +29,7 @@
             <Label HeightRequest="25"/>
             <Label
        Text="Password"
+                
       />
             <Entry
                 IsPassword="True" BackgroundColor="LightGoldenrodYellow"
