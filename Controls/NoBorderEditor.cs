@@ -8,9 +8,9 @@ using System.Runtime.CompilerServices;
 
 
 namespace SocialMediaApp.Controls
-{
-    public class NullBorderClass:Entry
     {
+    public class NullBorderEditor: Editor
+        {
 
         protected override void OnHandlerChanged()
             {
@@ -28,11 +28,11 @@ namespace SocialMediaApp.Controls
         private void SetBorderLessBackground()
             {
 #if ANDROID
-            if(Handler is IEntryHandler entryHandler)
+            if (Handler is IEditorHandler entryHandler)
                 {
-                if(BackgroundColor == null)
+                if (BackgroundColor == null)
                     {
-                    entryHandler.PlatformView.BackgroundTintList = Android.Content.Res.ColorStateList.ValueOf(Colors.Transparent.ToPlatform()) ;
+                    entryHandler.PlatformView.BackgroundTintList = Android.Content.Res.ColorStateList.ValueOf(Colors.Transparent.ToPlatform());
                     }
                 else
                     {
@@ -42,4 +42,4 @@ namespace SocialMediaApp.Controls
 #endif
             }
         }
-}
+    }
