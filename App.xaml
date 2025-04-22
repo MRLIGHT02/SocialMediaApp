@@ -16,6 +16,11 @@
                         <Setter Property="FontAttributes" Value="Bold"/>
 
                     </Style>
+                    <Style x:Key="fadedline" TargetType="BoxView">
+                        <Setter Property="Opacity" Value="0.2"/>
+                        <Setter Property="HeightRequest" Value="1"/>
+                        <Setter Property="Color" Value="{StaticResource Primary}"/>
+                    </Style>
                 </ResourceDictionary>
                 
             </ResourceDictionary.MergedDictionaries>
