@@ -13,7 +13,6 @@
         HeightRequest="128"
          
       />
-            <Button Text="Empty" ></Button>
             <Label Grid.Row="1"
             Text="Login"
             HorizontalOptions="Center"
@@ -35,6 +34,9 @@
              BackgroundColor="LightGoldenrodYellow"
              Placeholder="Enter Your Password"/>
                 <controls:Spacer/>
+                <Button Text="Login"
+                 Style="{StaticResource rounded}"/>
+                <controls:Spacer/>
                 <Grid ColumnDefinitions="*,Auto,*" ColumnSpacing="5" >
                     <BoxView
                  Grid.Column="0"
@@ -42,12 +44,11 @@
                     <Label Grid.Column="1" HorizontalOptions="Center"
                     Text="New User?"/>
                     <BoxView
-  Grid.Column="2"
-  Style="{StaticResource fadedline}"/>
+            Grid.Column="2"
+            Style="{StaticResource fadedline}"/>
                 </Grid>
                 <controls:Spacer></controls:Spacer>
-                <Button Text="Login"
-                 Style="{StaticResource rounded}"/>
+            <Button x:Name="btnRegister" Text="Register User" Style="{StaticResource rounded}" Clicked="btnRegister_Clicked" ></Button>
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
