@@ -19,19 +19,22 @@
                FontAttributes="Bold"/>
         <VerticalStackLayout Grid.Row="2" Spacing="2  ">
             <Label
-                 Text="Username"
+                 Text="Username" Style="{StaticResource formLabel }"
                 />
-            <Label/>
+            <controls:Spacer/>
             <controls:NullBorderEntery BackgroundColor="LightGoldenrodYellow" Placeholder="Enter UserName"/>
             <controls:Spacer />
             <Label
-       Text="Password"
+       Text="Password" Style="{StaticResource formLabel}"
                 
       />
             <controls:NullBorderEntery
                 IsPassword="True"
                 BackgroundColor="LightGoldenrodYellow"
                 Placeholder="Enter Your Password"/>
+            <controls:Spacer/>
+            
+            <Button Text="Login"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
